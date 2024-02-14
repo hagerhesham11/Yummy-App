@@ -21,7 +21,7 @@ let router = createHashRouter([
     {path:'/category/:category',element:<CategoryMeals/>},
     {path:'/area',element:<Area/>},
     {path:'/area/:area',element:<AreaMeals/>},
-    {path:'/ingredients', elements: <Ingredients/>},
+    {path:'/ingredients',element:<Ingredients/>},
     {path:'/ingredients/:ingredient',element:<IngredientMeals/>},
     {path:'/contact',element:<Contact/>},
 
