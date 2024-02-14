@@ -1,0 +1,59 @@
+:root{
+    --black-900:#0d0d0d;
+    --orange-900:#ff3d00;
+    --white-900:#ffffff;
+    --grey-900:#939393;
+}
+body{
+    background-color: var(--black-900);
+    color: var(--white-900);
+}
+/* ============ Global Styles ================  */
+a,
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-control:focus{
+    border-color:none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+/*=======================Loading=================*/
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #0000;
+    border-right-color: #ffa50097;
+    position: relative;
+    animation: l24 1s infinite linear;
+
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
+  }
+  .loader:after {
+    animation-duration: 4s;
+  }
+  @keyframes l24 {
+    100% {transform: rotate(1turn)}
+  }
+  .pointer{
+    cursor: pointer;
+  }
